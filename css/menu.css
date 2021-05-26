@@ -1,0 +1,211 @@
+/* * {
+	margin: 0;
+	box-sizing: border-box;
+	
+}
+.nav {
+	color: white;
+}
+.trigger-finger {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	width: 35px;
+	height: 20px;
+	margin: 35px 90px 0px 0px;
+	color: teal;
+}
+.trigger-finger::before {
+	content: '';
+	position: absolute;
+	top: -7px;
+	left: -7px;
+	bottom: -7px;
+	right: -7px;
+	background: transparent;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 0.3s cubic-bezier(0.75, 0, 0.25, 1);
+}
+.trigger-finger span {
+	display: block;
+	width: 100%;
+	height: 2px;
+	transition: transform 1s cubic-bezier(0.75, 0, 0.25, 1);
+	background: currentColor;
+}
+.trigger-finger span::before, .trigger-finger span::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	display: block;
+	height: 2px;
+	background: currentColor;
+	transition: transform 0.4s cubic-bezier(0.75, 0, 0.25, 1), top 0.4s 0.4s cubic-bezier(0.75, 0, 0.25, 1), background 0.2s cubic-bezier(0.75, 0, 0.25, 1);
+}
+.trigger-finger span::before {
+	top: 0;
+}
+.trigger-finger span::after {
+	top: calc(100% - 2px);
+}
+.trigger-input{
+	opacity: 0;
+	width: 0;
+	height: 0;
+	appearance: none;
+	position: fixed;
+}
+.trigger-input:focus + label {
+	color: teal;
+}
+.trigger-input:focus + label::before {
+	opacity: 1;
+}
+.trigger-input:checked + label {
+	height: 10px;
+	color: white;
+}
+.trigger-input:checked + label span {
+	transform: rotate(45deg);
+}
+.trigger-input:checked + label span::before, .trigger-input:checked + label span::after {
+	top: calc(50% - 1px);
+	transition: transform 0.4s 0.4s cubic-bezier(0.75, 0, 0.25, 1), top 0.4s cubic-bezier(0.75, 0, 0.25, 1), background 0.2s cubic-bezier(0.75, 0, 0.25, 1);
+}
+.trigger-input:checked + label span::after {
+	transform: rotate(90deg);
+}
+.trigger-input:checked ~ ul {
+	z-index: 9;
+	transform: none;
+	transition: 0.5s cubic-bezier(0.75, 0, 0.25, 1);
+}
+.list {
+	position: fixed;
+	overflow-y: scroll;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	background: rgba(0, 0, 0, 0.966);
+	font-size: 1.5rem;
+	padding: 130px 40px 40px 40px;
+	text-align: center;
+	transform: translate(100vw) rotate(45deg);
+	transition: 0.2s cubic-bezier(0.75, 0, 0.25, 1);
+	height: 720px;
+	font-weight: bold;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.link:hover {
+	color: rgb(148, 148, 148);
+}
+.item {
+	list-style: none;
+}
+.item + .item {
+	margin-top: 20px;
+}
+.link {
+	text-decoration: none;
+	color: inherit;
+}
+.list-child {
+	display: none;
+	font-size: 2rem;
+	margin-top: 10px;
+	padding-left: 2rem;
+}
+.menu .contact{
+	padding-top: 70px;
+}
+
+.menu .contact a{
+	color: white;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu .contact a:hover{
+	color: rgb(125, 125, 125);
+}
+@media screen and (max-width: 1200px){
+    .trigger-finger {
+		margin: 35px 99px 0px 0px;
+	}
+}
+@media screen and (max-width: 993px){
+    .trigger-finger {
+		margin: 25px 99px 0px 0px;
+	}
+}
+@media screen and (max-width: 768px){
+    .trigger-finger {
+		margin: 35px 99px 0px 0px;
+	}
+} */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.menulines{
+	font-size: 30px;
+	cursor: pointer;
+	margin: 15px 0px 0px 0px;
+	color: teal;
+	display: block;
+	text-align: center;
+}
+
+.sidenav{
+	height: 100vh;
+	width: 0px;
+	overflow-x: hidden;
+	position: fixed;
+	padding-top: 60px;
+	top: 0;
+	right: 0;
+	background: #000000;
+	z-index: 1;
+	transition: all 0.3s;
+}
+
+.sidenav a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #ffffff;
+	margin: 30px 0px 30px 0px;
+	display: block;
+	padding-left: 30px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sidenav a:hover{
+	color: #a5a5a5;
+}
+
+.closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 55px !important;
+}
+
+.menucontact{
+	margin-top: 10px;
+}
+
+.menucontact a{
+	font-size: 20px;
+	color: teal;
+	margin-top: 5px;
+}

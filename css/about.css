@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#body{
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(rgb(0, 0, 0),rgb(255, 255, 255));
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(45, 45, 45);
+}
+
+#backimage{
+    /* background: rgb(106, 106, 106); */
+    width: 100%;
+    height: 300px;
+}
+
+#backimage::after{
+    background: url('../Image/worldmap.png')no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 300px;
+    opacity: .3;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#backimage p{
+    font-size: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#backimage p span{
+    font-size: 30px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+#backimage #menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+#backimage #menu li{
+    list-style: none;
+}
+
+#backimage #menu li a{
+    display: block;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    outline: none;
+}
+
+#backimage #menu li a:hover{
+    color: whitesmoke;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0px 0px 1px 2px rgb(51, 255, 0);
+}
+
+#backimage .icons{
+    margin-top: 60px;
+    position: sticky;
+    top: 0px;
+}
+
+#backimage .icons i{
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    opacity: .5;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#backimage .icons i:hover{
+    opacity: 1;
+    transform: scale(1.1) translateX(1px);
+}
+
+#backimage .mainheader{
+    margin-top: 80px;
+}
+
+#backimage .mainheader h1{
+    font-size: 80px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/********************************************About section****************************************/
+
+#aboutsection h1{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.underline-orange{
+    border-bottom: 1px solid green;
+    margin: 20px 0px;
+}
+
+#aboutsection h3{
+    margin-top: 20px;
+}
+
+#aboutsection p{
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.3em;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    word-spacing: 1px;
+}
+
+#aboutsection .letter{
+    border-left: 5px solid green;
+    padding-left: 30px;
+}
+
+/********************************************Footer section****************************************/
+
+#footer{
+    margin-top: 50px;
+    position: relative;
+    padding: 20px 100px;
+}
+
+#footer::after{
+    content: "";
+    background: url('../Image/star.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .2;
+    z-index: -1;
+}
+
+#footer .contact p{
+    display: inline-block;
+}
+
+#footer .contact i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+#footer .contact a{
+    text-decoration: none;
+    color: green;
+}
+
+#footer .contact a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+#footer h3{
+    margin-top: 20px;
+    border-left: 5px solid rgb(142, 142, 142);
+    padding-left: 10px;
+}
+
+#footer .footer-secondry h5{
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#footer .footer-secondry i{
+    background-color: #ffffff;
+    color: black;
+    font-weight: normal;
+    border-radius: 100%;
+    padding: 17px;
+    transition: 1s;
+    font-size: 20px;
+}
+
+#footer address{
+    font-size: 15px;
+    line-height: 2em;
+    color: gray;
+    cursor: pointer;
+}
+
+#footer address:hover{
+    color: white;
+}
+
+#footer .footer-menu{
+    list-style: none;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    line-height: 2em;
+}
+
+#footer span{
+    height: 300px;
+}
+
+#footer .footer-menu a{
+    text-decoration: none;
+    color: gray;
+    transition: 1s;
+}
+
+#footer .footer-menu a:hover{
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#footer .copyright{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: gray;
+}
+
+#footer strong{
+    cursor: pointer;
+}
+
+#footer .copyright p:hover strong{
+    color: white;
+}
+
+#arrow-in{
+    background: linear-gradient(black,rgb(37, 37, 37)) ;
+    padding: 10px;
+    position: fixed;
+    border-radius: 100%;
+    font-size: 20px;
+    border: 1px solid white;
+    bottom: 40px;
+    right: 40px;
+    visibility: hidden;
+    color: white;
+    opacity: .7;
+}
+
+#arrow-in:hover{
+    opacity: 1;
+}

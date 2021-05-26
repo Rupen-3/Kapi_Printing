@@ -1,0 +1,167 @@
+@media screen and (max-width: 1200px){
+    #mainclass{
+        width: 97%;
+    }
+    #companyLogo img{
+        width: 230px;
+    }
+    #menubar li a{
+        font-size: 16px;
+        padding: 34px 15px 37px 15px;
+    }
+}
+@media screen and (max-width: 993px){
+    #companyLogo img{
+        width: 200px;
+    }
+    #menubar li{
+        margin-top: 0;
+    }
+    #menubar li a{
+        font-size: 14px;
+    }
+    #motto-primary{
+        font-size: 40px;
+    }
+    #openbar .goal{
+        font-size: 40px;
+    }
+    .contact-email{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    #companyLogo img{
+        width: 230px;
+    }
+    #menubar{
+        display: none;
+    }
+    #motto-secondry{
+        font-size: 30px;
+    }
+    #motto-primary{
+        font-size: 30px;
+    }
+    #openbar .goal{
+        font-size: 30px;
+    }
+    #openbar .productname{
+        font-size: 30px;
+    }
+    .box-primary{
+        height: 200px;
+        font-size: 5px;
+    }
+    .box-primary img{
+        width: 200px;
+        height: 200px;
+        transition: all 0.4s ease 0s;
+    }
+    .box{
+        width: 200px;
+        height: 200px;
+    }
+    .box img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media screen and (max-width: 600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #companyLogo img{
+        margin: auto;
+        padding: 0;
+        display: block;
+        width: 180px;
+    }
+    #motto-secondry{
+        font-size: 25px;
+        padding: 80px 0px 0px 0px;
+    }
+    #service{
+        padding: 20px 20px;
+    }
+    #motto-primary{
+        font-size: 25px;
+    }
+    #openbar .goal{
+        font-size: 25px;
+    }
+    #openbar .productname{
+        font-size: 25px;
+    }
+    #service h1{
+        font-size: 35px;
+    }
+    .service li{
+        font-size: 30px;
+        list-style-type: square;
+    }
+    .box-primary{
+        height: 150px;
+        font-size: 5px;
+    }
+    .box-primary img{
+        width: 150px;
+        height: 150px;
+        transition: all 0.4s ease 0s;
+    }
+    #talk{
+        text-align: center;
+        background-color: black;
+        padding-top: 90px;
+    }
+    #talk h1{
+        margin: 0px 0px 34px 0px;
+        font-size: 35px;
+    }
+    #talk #motto{
+        width: 100%;
+        margin: 0;
+    }
+    #contact h1{
+        font-size: 35px;
+    }
+    .contact-email{
+        margin-top: 50px;
+    }
+    #gallery h1{
+        font-size: 35px;
+    }
+    .box{
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+    }
+    .box img{
+        width: 180px;
+        height: 180px;
+    }
+    .btn-first{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #footer{
+        margin-top: 50px;
+        padding: 0px 0px 0px 10px;
+        /* text-align: center; */
+    }
+    #footer h3{
+        /* border:none; */
+    }
+}
+@media screen and (max-width: 400px){
+    .box{
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+    .box img{
+        width: 100px;
+        height: 100px;
+    }
+}
